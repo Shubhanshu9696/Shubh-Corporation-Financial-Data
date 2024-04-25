@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Financial Data</title>
+  <link rel="stylesheet" href="styles.css" >
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+</head>
+<body >
+  <header >
+    <h1>Shubh Corporation Financial Data</h1>
+    <p>Year: 2024</p>
+  </header>
+  <nav>
+    <ul>
+      <li class="tablinks" onclick="openTab(event, 'overview')" id="defaultOpen">Overview</li>
+      <li class="tablinks" onclick="openTab(event, 'revenue')">Revenue</li>
+      <li class="tablinks" onclick="openTab(event, 'expenses')">Expenses</li>
+      <li class="tablinks" onclick="openTab(event, 'profit')">Profit</li>
+    </ul>
+  </nav>
+  <div id="overview" class="tabcontent">
+    <h2>Overview</h2>
+    <canvas id="overviewChart"></canvas>
+    <table>
+      <tr>
+        <th>Year</th>
+        <th>Revenue</th>
+        <th>Expenses</th>
+        <th>Profit</th>
+      </tr>
+      <tr>
+        <td>2020</td>
+        <td>$400,000</td>
+        <td>$300,000</td>
+        <td>$100,000</td>
+      </tr>
+      <tr>
+        <td>2021</td>
+        <td>$450,000</td>
+        <td>$320,000</td>
+        <td>$130,000</td>
+      </tr>
+      <tr>
+        <td>2022</td>
+        <td>$500,000</td>
+        <td>$350,000</td>
+        <td>$150,000</td>
+      </tr>
+      <tr>
+        <td>2023</td>
+        <td>$550,000</td>
+        <td>$380,000</td>
+        <td>$170,000</td>
+      </tr>
+      <tr>
+        <td>2024</td>
+        <td>$600,000</td>
+        <td>$400,000</td>
+        <td>$200,000</td>
+      </tr>
+    </table>
+  </div>
+  <div id="revenue" class="tabcontent">
+    <h2>Revenue</h2>
+    <canvas id="revenueChart"></canvas>
+    <table>
+      <tr>
+        <th>Year</th>
+        <th>Revenue</th>
+      </tr>
+      <tr>
+        <td>2020</td>
+        <td>$400,000</td>
+      </tr>
+      <tr>
+        <td>2021</td>
+        <td>$450,000</td>
+      </tr>
+      <tr>
+        <td>2022</td>
+        <td>$500,000</td>
+      </tr>
+      <tr>
+        <td>2023</td>
+        <td>$550,000</td>
+      </tr>
+      <tr>
+        <td>2024</td>
+        <td>$600,000</td>
+      </tr>
+    </table>
+  </div>
+  <div id="expenses" class="tabcontent">
+    <h2>Expenses</h2>
+    <canvas id="expensesChart"></canvas>
+    <table>
+      <tr>
+        <th>Year</th>
+        <th>Expenses</th>
+      </tr>
+      <tr>
+        <td>2020</td>
+        <td>$300,000</td>
+      </tr>
+      <tr>
+        <td>2021</td>
+        <td>$320,000</td>
+      </tr>
+      <tr>
+        <td>2022</td>
+        <td>$350,000</td>
+      </tr>
+      <tr>
+        <td>2023</td>
+        <td>$380,000</td>
+      </tr>
+      <tr>
+        <td>2024</td>
+        <td>$400,000</td>
+      </tr>
+    </table>
+  </div>
+  <div id="profit" class="tabcontent" >
+    <h2>Profit</h2>
+    <canvas id="profitChart"></canvas>
+    <table>
+      <tr>
+        <th>Year</th>
+        <th>Profit</th>
+      </tr>
+      <tr>
+        <td>2020</td>
+        <td>$100,000</td>
+      </tr>
+      <tr>
+        <td>2021</td>
+        <td>$130,000</td>
+      </tr>
+      <tr>
+        <td>2022</td>
+        <td>$150,000</td>
+      </tr>
+      <tr>
+        <td>2023</td>
+        <td>$170,000</td>
+      </tr>
+      <tr>
+        <td>2024</td>
+        <td>$200,000</td>
+      </tr>
+    </table>
+  </div>
+  <footer>
+    <div class="footer-content" >
+      <div class="container" >
+        <div class="social-links">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+      <div class="footer-info">
+        <!-- <p>&copy; 2024 XYZ Corporation. All rights reserved.</p> -->
+      </div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

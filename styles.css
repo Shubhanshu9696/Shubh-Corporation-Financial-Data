@@ -1,0 +1,128 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Header */
+header {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Navigation */
+nav {
+  background-color: rgb(45, 45, 57);
+  padding: 15px 0;
+}
+
+ul {
+  list-style-type: none;
+  text-align: center;
+}
+
+li.tablinks {
+  display: inline-block;
+  padding: 10px 20px;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  background-color: #ddd;
+  margin-right: 5px;
+}
+
+li.tablinks:hover {
+  background-color: #bbb;
+}
+
+/* Tab Content */
+.tabcontent {
+  align-content: center;
+  display: none;
+  padding: 20px;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-content{
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  /* padding-left: 50%; */
+}  
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-links a {
+  background-color: #f8b500;
+  display: inline-block;
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  margin: 0 10px;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+  background-color: #f0a500;
+}
+.footer-info p {
+  margin: 0;
+  text-align: center;
+}
+
+/* Table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 600px) {
+  header {
+    padding: 15px 0;
+  }
+
+  li.tablinks {
+    padding: 8px 15px;
+  }
+
+  table {
+    font-size: 14px;
+  }
+}
